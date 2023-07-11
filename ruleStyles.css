@@ -1,0 +1,108 @@
+body{
+  margin:0;
+  padding:0;
+  height: 100%;
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+}
+
+.heading{
+  width: 100%;
+  background-image:url("images/guns.jpg");
+  background-size: 50% 100%;
+  font-family: 'Oswald';
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  z-index: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: small;
+}
+h1{
+  /* color: #F24C4C; */
+  padding: 5px;
+  font-size: 50px;
+}
+
+.time{
+  background: url("images/ascent.jpg") no-repeat;
+  background-size: 100% 100%;
+  height:100vh;
+  overflow: auto;
+}
+.line{
+  position: relative;
+  cursor: url("images/frenzy.png"), crosshair;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 10%;
+  width: 40%;
+  animation: fade-in-right ease 4s forwards;
+  text-align: center;
+}
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.linet{
+  margin-left: 50%;
+}
+.linem{
+  margin-left: 10%;
+}
+.liner{
+  margin-left: 50%;
+}
+.linep{
+  margin-left: 10%;
+}
+.maps{
+  background: url("images/maps.jpg") no-repeat;
+  background-size: 100% 100%;
+  height:100vh;
+  overflow: auto;
+}
+
+.results{
+  background: url("images/split.jpg") no-repeat;
+  background-size: 100% 100%;
+  height:100vh;
+  overflow: auto;
+}
+
+.prize{
+  background: url("images/prize.webp") no-repeat;
+  background-size: 100% 100%;
+  height:100vh;
+  overflow: auto;
+}
+@media only screen and (max-width: 768px){
+  .line{
+    height: 10%;
+    width: 60%;
+  }
+  .linet{
+    margin-left: 30%;
+  }
+  .linem{
+    margin-left: 5%;
+  }
+  .liner{
+    margin-left: 30%;
+  }
+  .linep{
+    margin-left: 5%;
+  }
+}
